@@ -8,64 +8,47 @@ on that product, notifications being sent on a UpdateItem call by a seller.
 */
 
 service Marketplace {
-  // seller functions
   rpc RegisterSeller (RegisterSellerRequest) returns (RegisterSellerResponse);
   rpc DeleteItem (DeleteItemRequest) returns (DeleteItemResponse);
   rpc DisplaySellerItems (DisplaySellerItemsRequest) returns (DisplaySellerItemsResponse);
   rpc SellItem (SellItemRequest) returns (SellItemResponse);
-
-  // buyer functions
   rpc SearchItem (SearchItemRequest) returns (SearchItemResponse);
   rpc RateItem (RateItemRequest) returns (RateItemResponse);
   rpc WishlistItem (WishlistRequest) returns (WishlistResponse) {}
 
-  // notification functions
-  rpc UpdateItem (UpdateItemRequest) returns (stream UpdateReply) {} // trigger by seller
-  rpc BuyItem (BuyItemRequest) returns (stream BuyItemReply) {} // trigger by buyer
+  rpc UpdateItem (UpdateItemRequest) returns (UpdateItemResponse);
+  rpc BuyItem (BuyItemRequest) returns (BuyItemResponse);
+}
 
+service notification {
+  rpc SendNotification (NotificationRequest) returns (NotificationResponse);
 }
 
 // notification-related calls
+message NotificationResponse {
+  string response = 1;
+}
+message NotificationRequest {
+  string request = 1;
+}
 message UpdateItemRequest {
   int32 _id = 1;
   double new_price = 2;
   int32 new_quantity = 3;
-  string ip_port = 4;
+  string address = 4;
   string uuid = 5;
 }
-message UpdateReply {
-  oneof notification {
-    WishlistNotification wishlist_notification = 1;
-    SellerUpdateNotification seller_notification = 2;
-  }
+message UpdateItemResponse {
+  string status = 1;
+  string buyer_id = 2;
 }
-message SellerUpdateNotification {
-  string message = 1;
-  string status = 2;
-}
-message WishlistNotification {
-  string message = 1;
-  string status = 2;
-}
-
 message BuyItemRequest {
-  string buyer_ip_port = 1;
-  int32 _id = 2;
-  int32 quantity = 3;
+  int32 _id = 1;
+  int32 quantity = 2;
+  string ip_port = 3;
 }
-message BuyItemReply {
-  oneof notification {
-    BuyerBuyNotification buyer_buy_notification = 1;
-    SellerBuyNotification seller_buy_notification = 2;
-  }
-}
-message BuyerBuyNotification {
+message BuyItemResponse {
   string status = 1;
-  string message = 2;
-}
-message SellerBuyNotification {
-  string status = 1;
-  string message = 2;
 }
 
 

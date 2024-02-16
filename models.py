@@ -41,7 +41,6 @@ class Product:
 
     def __str__(self):
         return (
-            f'Product:\n'
             f'Id={self.id}\n'
             f'Name={self.name}\n'
             f'Price={self.price}\n'
