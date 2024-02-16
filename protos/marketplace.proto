@@ -1,0 +1,141 @@
+syntax = "proto3";
+
+/*
+SellItem should make the seller stream for notifications on that product,
+and that notification is basically sent through BuyItem.
+In a similar vein we have AddToWishList that should make buyers stream for notifications
+on that product, notifications being sent on a UpdateItem call by a seller.
+*/
+
+service Marketplace {
+  // seller functions
+  rpc RegisterSeller (RegisterSellerRequest) returns (RegisterSellerResponse);
+  rpc DeleteItem (DeleteItemRequest) returns (DeleteItemResponse);
+  rpc DisplaySellerItems (DisplaySellerItemsRequest) returns (DisplaySellerItemsResponse);
+  rpc SellItem (SellItemRequest) returns (SellItemResponse);
+
+  // buyer functions
+  rpc SearchItem (SearchItemRequest) returns (SearchItemResponse);
+  rpc RateItem (RateItemRequest) returns (RateItemResponse);
+  rpc WishlistItem (WishlistRequest) returns (WishlistResponse) {}
+
+  // notification functions
+  rpc UpdateItem (UpdateItemRequest) returns (stream UpdateReply) {} // trigger by seller
+  rpc BuyItem (BuyItemRequest) returns (stream BuyItemReply) {} // trigger by buyer
+
+}
+
+// notification-related calls
+message UpdateItemRequest {
+  int32 _id = 1;
+  double new_price = 2;
+  int32 new_quantity = 3;
+  string ip_port = 4;
+  string uuid = 5;
+}
+message UpdateReply {
+  oneof notification {
+    WishlistNotification wishlist_notification = 1;
+    SellerUpdateNotification seller_notification = 2;
+  }
+}
+message SellerUpdateNotification {
+  string message = 1;
+  string status = 2;
+}
+message WishlistNotification {
+  string message = 1;
+  string status = 2;
+}
+
+message BuyItemRequest {
+  string buyer_ip_port = 1;
+  int32 _id = 2;
+  int32 quantity = 3;
+}
+message BuyItemReply {
+  oneof notification {
+    BuyerBuyNotification buyer_buy_notification = 1;
+    SellerBuyNotification seller_buy_notification = 2;
+  }
+}
+message BuyerBuyNotification {
+  string status = 1;
+  string message = 2;
+}
+message SellerBuyNotification {
+  string status = 1;
+  string message = 2;
+}
+
+
+// seller unary RPCs
+message RegisterSellerRequest {
+  string ip_port = 1;
+  string uuid = 2;
+}
+message RegisterSellerResponse {
+  string status = 1;
+  string message = 2;
+}
+message DeleteItemRequest {
+  int32 _id = 1;
+  string ip_port = 2;
+  string uuid = 3;
+}
+message DeleteItemResponse {
+  string status = 1;
+  string message = 2;
+}
+message DisplaySellerItemsRequest {
+  string ip_port = 1;
+  string uuid = 2;
+}
+message DisplaySellerItemsResponse {
+  string output = 1;
+  string status = 2;
+}
+message SellItemRequest {
+  string ip_port = 1;
+  string uuid = 2;
+
+  string name = 3;
+  float price = 4;
+  int32 quantity = 5;
+  string description = 6;
+  string category = 7;
+}
+message SellItemResponse {
+  string status = 1;
+  string message = 2;
+}
+
+// buyer unary RPCs
+message SearchItemRequest {
+  string name = 1;
+  string category = 2;
+}
+message SearchItemResponse{
+  string message = 1;
+  string status = 2;
+}
+message RateItemRequest {
+  int32 _id = 1;
+  string buyer_ip_port = 2;
+  int32 rating = 3;
+}
+message RateItemResponse {
+  string status = 1;
+  string message = 2;
+}
+message WishlistRequest {
+  string buyer_ip_port = 1;
+  int32 _id = 2;
+}
+message WishlistResponse {
+  string status = 1;
+  string message = 2;
+}
+
+
+
