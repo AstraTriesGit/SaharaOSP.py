@@ -57,8 +57,8 @@ stub = marketplace_pb2_grpc.MarketplaceStub(channel)
 print("You are connecting from {}".format(ip_port))
 print(welcome)
 
-notif_server_thread = threading.Thread(target=run_notif_server)
-notif_server_thread.start()
+# notif_server_thread = threading.Thread(target=run_notif_server)
+# notif_server_thread.start()
 
 while True:
     print(menu)
@@ -85,8 +85,8 @@ while True:
     elif choice == '4':
         id_of_item = int(input('Enter the id of item you want to buy: '))
         quantity = int(input("Enter quantity: "))
-        response = stub.BuyItem(marketplace_pb2.BuyItemRequest(_id=id_of_item, quantity=quantity, ip_port=ip_port))
-
+        response = stub.BuyItem(marketplace_pb2.BuyItemRequest(
+            _id=id_of_item, quantity=quantity, ip_port=ip_port))
         print(response.status)
     elif choice == '5':
         break

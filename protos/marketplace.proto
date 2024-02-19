@@ -35,7 +35,7 @@ message UpdateItemRequest {
   int32 _id = 1;
   double new_price = 2;
   int32 new_quantity = 3;
-  string address = 4;
+  string ip_port = 4;
   string uuid = 5;
 }
 message UpdateItemResponse {

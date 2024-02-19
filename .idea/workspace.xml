@@ -5,20 +5,149 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8e9cca5-7e59-49a5-aa13-16ccb373f4b8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/SonogongOSP.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bruh.ps1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/buyer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/marketplace.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/marketplace_pb2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/marketplace_pb2_grpc.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protos/marketplace.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bruh.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/_auth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/_channel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/_common.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/_compression.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/_cython/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/_cython/_credentials/roots.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/_cython/_cygrpc/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/_cython/cygrpc.cpython-310-darwin.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/_grpcio_metadata.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/_interceptor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/_observability.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/_plugin_wrapping.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/_runtime_protos.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/_server.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/_simple_stubs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/_typing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/_utilities.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/aio/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/aio/_base_call.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/aio/_base_channel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/aio/_base_server.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/aio/_call.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/aio/_channel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/aio/_interceptor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/aio/_metadata.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/aio/_server.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/aio/_typing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/aio/_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/beta/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/beta/_client_adaptations.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/beta/_metadata.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/beta/_server_adaptations.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/beta/implementations.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/beta/interfaces.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/beta/utilities.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/experimental/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/experimental/aio/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/experimental/gevent.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/experimental/session_cache.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/framework/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/framework/common/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/framework/common/cardinality.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/framework/common/style.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/framework/foundation/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/framework/foundation/abandonment.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/framework/foundation/callable_util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/framework/foundation/future.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/framework/foundation/logging_pool.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/framework/foundation/stream.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/framework/foundation/stream_util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/framework/interfaces/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/framework/interfaces/base/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/framework/interfaces/base/base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/framework/interfaces/base/utilities.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/framework/interfaces/face/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/framework/interfaces/face/face.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/framework/interfaces/face/utilities.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc_tools/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc_tools/_proto/google/protobuf/any.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc_tools/_proto/google/protobuf/api.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc_tools/_proto/google/protobuf/compiler/plugin.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc_tools/_proto/google/protobuf/descriptor.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc_tools/_proto/google/protobuf/duration.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc_tools/_proto/google/protobuf/empty.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc_tools/_proto/google/protobuf/field_mask.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc_tools/_proto/google/protobuf/source_context.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc_tools/_proto/google/protobuf/struct.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc_tools/_proto/google/protobuf/timestamp.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc_tools/_proto/google/protobuf/type.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc_tools/_proto/google/protobuf/wrappers.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc_tools/_protoc_compiler.cpython-310-darwin.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc_tools/command.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc_tools/protoc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpcio-1.60.1.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpcio-1.60.1.dist-info/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpcio-1.60.1.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpcio-1.60.1.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpcio-1.60.1.dist-info/REQUESTED" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpcio-1.60.1.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpcio-1.60.1.dist-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpcio_tools-1.60.1.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpcio_tools-1.60.1.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpcio_tools-1.60.1.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpcio_tools-1.60.1.dist-info/REQUESTED" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpcio_tools-1.60.1.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpcio_tools-1.60.1.dist-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/pip-24.0.dist-info/AUTHORS.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/pip-24.0.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/pip-24.0.dist-info/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/pip-24.0.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/pip-24.0.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/pip-24.0.dist-info/REQUESTED" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/pip-24.0.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/pip-24.0.dist-info/entry_points.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/pip-24.0.dist-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/pip/_internal/utils/_jaraco_text.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/pip/_vendor/cachecontrol/py.typed" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/pip/_vendor/certifi/py.typed" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/pip/_vendor/chardet/codingstatemachinedict.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/pip/_vendor/chardet/macromanprober.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/pip/_vendor/chardet/py.typed" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/pip/_vendor/chardet/resultdict.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/pip/_vendor/colorama/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/pip/_vendor/colorama/tests/ansi_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/pip/_vendor/colorama/tests/ansitowin32_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/pip/_vendor/colorama/tests/initialise_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/pip/_vendor/colorama/tests/isatty_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/pip/_vendor/colorama/tests/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/pip/_vendor/colorama/tests/winterm_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/pip/_vendor/distro/py.typed" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/pip/_vendor/idna/py.typed" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/pip/_vendor/packaging/py.typed" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/pip/_vendor/platformdirs/py.typed" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/pip/_vendor/pyparsing/py.typed" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/pip/_vendor/pyproject_hooks/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/pip/_vendor/pyproject_hooks/_compat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/pip/_vendor/pyproject_hooks/_impl.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/pip/_vendor/pyproject_hooks/_in_process/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/pip/_vendor/resolvelib/py.typed" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/pip/_vendor/rich/_fileno.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/pip/_vendor/rich/_null_file.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/pip/_vendor/rich/py.typed" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/pip/_vendor/tenacity/py.typed" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/pip/_vendor/tomli/py.typed" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/pip/_vendor/truststore/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/pip/_vendor/truststore/_api.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/pip/_vendor/truststore/_macos.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/pip/_vendor/truststore/_openssl.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/pip/_vendor/truststore/_ssl_constants.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/pip/_vendor/truststore/_windows.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/pip/_vendor/truststore/py.typed" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/pip/_vendor/urllib3/packages/backports/weakref_finalize.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/SonogongOSP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SonogongOSP.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buyer.py" beforeDir="false" afterPath="$PROJECT_DIR$/buyer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/marketplace.py" beforeDir="false" afterPath="$PROJECT_DIR$/marketplace.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/marketplace_pb2.py" beforeDir="false" afterPath="$PROJECT_DIR$/marketplace_pb2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protos/marketplace.proto" beforeDir="false" afterPath="$PROJECT_DIR$/protos/marketplace.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seller.py" beforeDir="false" afterPath="$PROJECT_DIR$/seller.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +186,7 @@
     "Python.seller.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/hp/PycharmProjects/SonogongOSP/seller.py",
@@ -65,7 +195,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "PluginSettings",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -83,14 +213,13 @@
     </configuration>
     <configuration name="buyer" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="SonogongOSP" />
-      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.12 (SonogongOSP)" />
+      <option name="SDK_HOME" value="/usr/bin/python3" />
+      <option name="SDK_NAME" value="Python 3.9" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -107,7 +236,6 @@
     </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="SonogongOSP" />
-      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -130,14 +258,13 @@
     </configuration>
     <configuration name="marketplace" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="SonogongOSP" />
-      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.12 (SonogongOSP)" />
+      <option name="SDK_HOME" value="/usr/bin/python3" />
+      <option name="SDK_NAME" value="Python 3.9" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -154,14 +281,13 @@
     </configuration>
     <configuration name="seller" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="SonogongOSP" />
-      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.12 (SonogongOSP)" />
+      <option name="SDK_HOME" value="/usr/bin/python3" />
+      <option name="SDK_NAME" value="Python 3.9" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -201,6 +327,8 @@
       <updated>1708091711183</updated>
       <workItem from="1708091727348" duration="911000" />
       <workItem from="1708094892923" duration="10797000" />
+      <workItem from="1708327569087" duration="1125000" />
+      <workItem from="1708328705489" duration="2445000" />
     </task>
     <servers />
   </component>
@@ -222,8 +350,11 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/SonogongOSP$buyer.coverage" NAME="buyer Coverage Results" MODIFIED="1708105083205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/SonogongOSP$seller.coverage" NAME="seller Coverage Results" MODIFIED="1708105083398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/SonogongOSP$marketplace.coverage" NAME="marketplace Coverage Results" MODIFIED="1708105083304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/JustWorkAlready$seller.coverage" NAME="seller Coverage Results" MODIFIED="1708332423882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/JustWorkAlready$buyer.coverage" NAME="buyer Coverage Results" MODIFIED="1708332423674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/SonogongOSP$buyer.coverage" NAME="buyer Coverage Results" MODIFIED="1708105083205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/JustWorkAlready$marketplace.coverage" NAME="marketplace Coverage Results" MODIFIED="1708332423775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/SonogongOSP$seller.coverage" NAME="seller Coverage Results" MODIFIED="1708105083398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>

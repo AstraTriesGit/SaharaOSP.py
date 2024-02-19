@@ -274,10 +274,10 @@ class MarketplaceService(marketplace_pb2_grpc.MarketplaceServicer):
         if product:
             if product.quantity >= request.quantity:
                 product.quantity -= request.quantity
-                # message = "Bought product successfully"
-                market_client = MarketClient(product.seller_ip_port)
-                notif_message = "Your product with id {} has sold {} units".format(request._id, product.quantity)
-                market_client.notify(notif_message)
+                # # message = "Bought product successfully"
+                # market_client = MarketClient(product.seller_ip_port)
+                # notif_message = "Your product with id {} has sold {} units".format(request._id, product.quantity)
+                # market_client.notify(notif_message)
 
                 print(log + " success")
                 return marketplace_pb2.BuyItemResponse(
@@ -310,28 +310,26 @@ class MarketplaceService(marketplace_pb2_grpc.MarketplaceServicer):
             product.quantity = request.new_quantity
             message = "Updated product"
 
-            buyers_to_notify = set()
-            for buyer in self.wishlist:
-                if request._id in self.wishlist[buyer]:
-                    buyers_to_notify.add(buyer)
-            for buyer in buyers_to_notify:
-                market_client = MarketClient(buyer.ip_port)
-                message = ("Item {} has been updated! New price {} and quantity {}".
-                           format(request._id, request.new_price, request.new_quantity))
-                market_client.notify(message)
+            # buyers_to_notify = set()
+            # for buyer in self.wishlist:
+            #     if request._id in self.wishlist[buyer]:
+            #         buyers_to_notify.add(buyer)
+            # for buyer in buyers_to_notify:
+            #     market_client = MarketClient(buyer.ip_port)
+            #     message = ("Item {} has been updated! New price {} and quantity {}".
+            #                format(request._id, request.new_price, request.new_quantity))
+            #     market_client.notify(message)
 
             print(log + " success")
-            return marketplace_pb2.SellerUpdateNotification(
+            return marketplace_pb2.UpdateItemResponse(
                 status="SUCCESS",
-                message=message
             )
         else:
             message = "Product with requested id not found"
 
             print(log + " failed: " + message)
-            return marketplace_pb2.SellerUpdateNotification(
+            return marketplace_pb2.UpdateItemResponse(
                 status="FAIL",
-                message=message
             )
 
 

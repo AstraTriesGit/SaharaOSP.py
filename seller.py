@@ -58,8 +58,8 @@ stub = marketplace_pb2_grpc.MarketplaceStub(channel)
 print("You are connecting from {} with uuid={}".format(ip_port, seller_uuid))
 print(welcome)
 
-notif_server_thread = threading.Thread(target=run_notif_server)
-notif_server_thread.start()
+# notif_server_thread = threading.Thread(target=run_notif_server)
+# notif_server_thread.start()
 
 while True:
     print(menu)
@@ -79,6 +79,15 @@ while True:
                                             price=price, description=description, category=category))
         print(sell_response.status)
         print(sell_response.message)
+    elif choice == '3':
+        id_of_item = int(input('Enter the id of the item you wish to update: '))
+        new_price = float(input('Enter the new price: '))
+        new_quantity = int(input('Enter the new quantity: '))
+        response = stub.UpdateItem(
+            marketplace_pb2.UpdateItemRequest(_id=id_of_item, new_quantity=new_quantity, new_price=new_price,
+                                              ip_port=ip_port, uuid=seller_uuid)
+        )
+        print(response.status)
     elif choice == '4':
         id_of_item = int(input('Enter the id of item you want to delete: '))
         response = stub.DeleteItem(
