@@ -308,6 +308,14 @@ class MarketplaceService(marketplace_pb2_grpc.MarketplaceServicer):
         seller = Seller(request.ip_port, request.uuid)
 
         if product:
+            thing = request._id
+            if thing not in self.sellers[seller]:
+                message = "Seller does not have an item with the requested id"
+                print(log + " failed: " + message)
+                return marketplace_pb2.UpdateItemResponse(
+                    status="FAIL",
+                )
+
             product.price = request.new_price
             product.quantity = request.new_quantity
             message = "Updated product"

@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8e9cca5-7e59-49a5-aa13-16ccb373f4b8" name="Changes" comment="Make it ez to port">
-      <change afterPath="$PROJECT_DIR$/deploy/create_vms.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/install.sh" afterDir="false" />
+    <list default="true" id="e8e9cca5-7e59-49a5-aa13-16ccb373f4b8" name="Changes" comment="Make it ez to port 2.0">
       <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/__init__.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/_auth.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/grpc/_channel.py" afterDir="false" />
@@ -143,6 +141,8 @@
       <change afterPath="$PROJECT_DIR$/venv/lib/python3.10/site-packages/pip/_vendor/urllib3/packages/backports/weakref_finalize.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bruh.sh" beforeDir="false" afterPath="$PROJECT_DIR$/bruh.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deploy/create_vms.sh" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/create_vms.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deploy/install_debian.sh" beforeDir="false" afterPath="$PROJECT_DIR$/install_debian.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/marketplace.py" beforeDir="false" afterPath="$PROJECT_DIR$/marketplace.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -198,6 +198,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\hp\PycharmProjects\SonogongOSP" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager" selected="Compound.Breakdown">
@@ -326,7 +329,7 @@
       <workItem from="1708327569087" duration="1125000" />
       <workItem from="1708328705489" duration="2797000" />
       <workItem from="1708333442015" duration="3414000" />
-      <workItem from="1708425418659" duration="398000" />
+      <workItem from="1708425418659" duration="3002000" />
     </task>
     <task id="LOCAL-00001" summary="Make it ez to port">
       <created>1708333202089</created>
@@ -335,7 +338,14 @@
       <option name="project" value="LOCAL" />
       <updated>1708333202089</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Make it ez to port 2.0">
+      <created>1708426104791</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1708426104791</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -355,7 +365,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Make it ez to port" />
-    <option name="LAST_COMMIT_MESSAGE" value="Make it ez to port" />
+    <MESSAGE value="Make it ez to port 2.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Make it ez to port 2.0" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -370,13 +381,13 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SonogongOSP$marketplace.coverage" NAME="marketplace Coverage Results" MODIFIED="1708105083304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/SaharaOSP$seller.coverage" NAME="seller Coverage Results" MODIFIED="1708425587338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/SaharaOSP$seller.coverage" NAME="seller Coverage Results" MODIFIED="1708425869496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/JustWorkAlready$seller.coverage" NAME="seller Coverage Results" MODIFIED="1708332423882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/JustWorkAlready$buyer.coverage" NAME="buyer Coverage Results" MODIFIED="1708332423674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/SonogongOSP$buyer.coverage" NAME="buyer Coverage Results" MODIFIED="1708105083205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/JustWorkAlready$marketplace.coverage" NAME="marketplace Coverage Results" MODIFIED="1708332423775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/SonogongOSP$seller.coverage" NAME="seller Coverage Results" MODIFIED="1708105083398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/SaharaOSP$marketplace.coverage" NAME="marketplace Coverage Results" MODIFIED="1708425587168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/SaharaOSP$buyer.coverage" NAME="buyer Coverage Results" MODIFIED="1708425587026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/SaharaOSP$marketplace.coverage" NAME="marketplace Coverage Results" MODIFIED="1708425869354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/SaharaOSP$buyer.coverage" NAME="buyer Coverage Results" MODIFIED="1708425869280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
