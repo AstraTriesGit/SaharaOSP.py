@@ -202,7 +202,8 @@ class MarketplaceService(marketplace_pb2_grpc.MarketplaceServicer):
             self.rated_items[buyer] = set()
 
         if product:
-            if product in self.rated_items[buyer]:
+            thing = request._id
+            if thing in self.rated_items[buyer]:
                 message = "Product already rated by the buyer"
                 print(log + " failed: " + message)
                 return marketplace_pb2.RateItemResponse(
@@ -249,13 +250,14 @@ class MarketplaceService(marketplace_pb2_grpc.MarketplaceServicer):
             self.wishlist[buyer] = set()
 
         # you shouldn't redo it tho
-        # if request._id in self.wishlist[buyer].:
-        #     message = "Product already in wishlist"
-        #     print(log + " failed: " + message)
-        #     return marketplace_pb2.WishlistResponse(
-        #         status="FAIL",
-        #         message=message
-        #     )
+        thing = request._id
+        if thing in self.wishlist[buyer]:
+            message = "Product already in wishlist"
+            print(log + " failed: " + message)
+            return marketplace_pb2.WishlistResponse(
+                status="FAIL",
+                message=message
+            )
 
         self.wishlist[buyer].add(request._id)
         print(log + " succeeded")
